@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Please motivate us by Subscribing our youtube Channel. Youtube Channel "Coder ACB"-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="notes_style.css" />
+    <script type="text/javascript" src="notes.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center mt-4">
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer1"></div>
+                    <div class="card">
+                        <div class="round1">
+                            <p class="p">1</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">FASTER</h5>
+                            <input type="text" id="text1" placeholder="Save a task" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit1" value="+" style="--clr: #f6a425" onclick="submit1();"/>
+                                <i class="fas fa-solid fa-rocket svg-icon red fa-2x" onclick="ClearFields1();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer2"></div>
+                    <div class="card">
+                        <div class="round2">
+                            <p class="p">2</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">SECURE</h5>
+                            <input type="text" id="text2" placeholder="Save a task" wrap="soft" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit2" value="+" style="--clr: #43b645" onclick="submit2();"/>
+                                <i class="fas fa-lock svg-icon green fa-2x" onclick="ClearFields2();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer3"></div>
+                    <div class="card">
+                        <div class="round3">
+                            <p class="p">3</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">EASIER</h5>
+                            <input type="text" id="text3" placeholder="Save a task" wrap="soft" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit3" value="+" style="--clr: #fe3180" onclick="submit3();"/>
+                                <i class="fas fa-user-check svg-icon pink fa-2x" onclick="ClearFields3();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer4"></div>
+                    <div class="card">
+                        <div class="round4">
+                            <p class="p">4</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">SIMPLE</h5>
+                            <input type="text" id="text4" placeholder="Save a task" wrap="soft" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit4" value="+" style="--clr: #24d7dd" onclick="submit4();"/>
+                                <i class="fa-solid fa-key svg-icon turquoise fa-2x" onclick="ClearFields4();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer5"></div>
+                    <div class="card">
+                        <div class="round5">
+                            <p class="p">5</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">ENTERTAINING</h5>
+                            <input type="text" id="text5" placeholder="Save a task" wrap="soft" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit4" value="+" style="--clr: #f73232" onclick="submit5();"/>
+                                <i class="fa-solid fa-mobile svg-icon cherryred fa-2x" onclick="ClearFields5();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-card py-4">
+                    <div class="layer6"></div>
+                    <div class="card">
+                        <div class="round6">
+                            <p class="p">6</p>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title pt-3 text-center">RELAX</h5>
+                            <input type="text" id="text6" placeholder="Save a task" />
+                            <br /><br />
+                            <div class="edit">
+                                <input type="Submit" id="submit4" value="+" style="--clr: #ebcb1b" onclick="submit6();"/>
+                                <i class="fa-solid fa-headphones svg-icon yellow fa-2x" onclick="ClearFields6();"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
