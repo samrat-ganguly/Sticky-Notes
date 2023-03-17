@@ -1,0 +1,39 @@
+.note {
+  padding: 25px;
+  height: 280px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: aquamarine;
+  box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.note .note_text {
+  flex: 1;
+  resize: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  outline: none;
+  border: none;
+}
+.note .note_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.note .note_footer img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: opacity 300ms ease;
+}
+@media (min-width: 768px) {
+  .note .note_footer img {
+    opacity: 0;
+  }
+}
+
+.note:hover .note_footer img {
+  opacity: 1 !important;
+}/*# sourceMappingURL=note.css.map */

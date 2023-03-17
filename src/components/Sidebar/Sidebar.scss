@@ -1,0 +1,27 @@
+.sidebar {
+  img {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px 0;
+  }
+  .sidebar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 0;
+
+    .sidebar_list_item {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+    }
+    li {
+      list-style: none;
+    }
+  }
+
+  .sidebar_list_active {
+    height: 300px;
+  }
+}

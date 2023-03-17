@@ -1,0 +1,13 @@
+.noteContainer {
+  height: 100%;
+  h2 {
+    margin-bottom: 20px;
+  }
+  .noteContainer_notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 90%;
+  }
+}

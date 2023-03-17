@@ -1,0 +1,13 @@
+.noteContainer {
+  height: 100%;
+}
+.noteContainer h2 {
+  margin-bottom: 20px;
+}
+.noteContainer .noteContainer_notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-y: scroll;
+  height: 90%;
+}/*# sourceMappingURL=noteContainer.css.map */
