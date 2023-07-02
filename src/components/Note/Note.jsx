@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import React from "react";
 
 import deleteIcon from "../../images/delete_icon.png";
@@ -7,7 +8,7 @@ import "./Note.css";
 let timer = 500,
   timeout;
 
-const Note = (props) => {
+const Note = ({ note, updateText, deleteNote }) => {
   const formatDate = (value) => {
     if (!value) return "";
 
@@ -38,23 +39,23 @@ const Note = (props) => {
   };
 
   //update text for a particular id , so id is used with text
-  const updateText = (text, id) => {
-    debounce(() => props.updateText(text, id));
+  const UpdateText = (text, id) => {
+    debounce(() => updateText(text, id));
   };
-
+  console.log(note.time);
   return (
-    <div className="note" style={{ backgroundColor: props.note.color }}>
+    <div className="note" style={{ backgroundColor: note.color }}>
       <textarea
         className="note_text"
-        defaultValue={props.note.text}
-        onChange={(event) => updateText(event.target.value, props.note.id)}
+        defaultValue={note.text}
+        onChange={(event) => UpdateText(event.target.value, note.id)}
       />
       <div className="note_footer">
-        <p>{formatDate(props.note.time)}</p>
+        <p>{format(new Date(note.time), "do MM, yyyy 	hh:mm")}</p>
         <img
           src={deleteIcon}
           alt="Delete"
-          onClick={() => props.deleteNote(props.note.id)}
+          onClick={() => deleteNote(note.id)}
         />
         {/* To trigger when deleting a note */}
       </div>

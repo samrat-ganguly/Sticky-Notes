@@ -15,7 +15,7 @@ const App = () => {
     tempNotes.push({
       id: Date.now() + "" + Math.floor(Math.random() * 78),
       text: "",
-      time: Date.now(),
+      time: new Date(),
       color,
     });
     setNotes(tempNotes);
